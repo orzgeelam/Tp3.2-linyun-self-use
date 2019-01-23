@@ -1,3 +1,0 @@
-<?php
-//000000000000a:2:{i:0;a:0:{}i:1;a:4:{s:11:"list/:cid\d";a:2:{i:0;s:11:"index/lists";i:1;a:2:{s:4:"list";a:3:{i:0;i:0;i:1;s:0:"";i:2;s:0:"";}s:3:"cid";a:3:{i:0;i:1;i:1;s:0:"";i:2;s:3:"int";}}}s:5:":id\d";a:2:{i:0;s:12:"index/detail";i:1;a:1:{s:2:"id";a:3:{i:0;i:1;i:1;s:0:"";i:2;s:3:"int";}}}s:12:"notice/:id\d";a:2:{i:0;s:13:"notice/detail";i:1;a:2:{s:6:"notice";a:3:{i:0;i:0;i:1;s:0:"";i:2;s:0:"";}s:2:"id";a:3:{i:0;i:1;i:1;s:0:"";i:2;s:3:"int";}}}s:10:"cate/:id\d";a:2:{i:0;s:15:"category/detail";i:1;a:2:{s:4:"cate";a:3:{i:0;i:0;i:1;s:0:"";i:2;s:0:"";}s:2:"id";a:3:{i:0;i:1;i:1;s:0:"";i:2;s:3:"int";}}}}}
-?>
