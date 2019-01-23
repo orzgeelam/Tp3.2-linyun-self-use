@@ -40,7 +40,7 @@ $_config     = [
 	'PRODUCT_INFO'         => '',
 	// 公司简介
 	'COMPANY_INFO'         => '',
-	'WELCOME_WORD'         => "<h1>欢迎进入".$companyname."后台管理系统</h1>",
+	'WELCOME_WORD'         => "欢迎进入".$companyname."后台管理系统",
 	// URL模式
 	'URL_MODEL'            => '3',
 	// 全局过滤配置

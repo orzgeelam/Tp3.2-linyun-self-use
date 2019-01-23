@@ -51,7 +51,8 @@
 							<a href="{:U($vo['_child'][0]['_child'][0]['url'])}" target="<php>echo C(strtolower($vo['name']).'_config.target');</php>">
 								<i class="fa {$vo.icon}"></i>
 								<span>{$vo.title}</span>
-							</a></li>
+							</a>
+							</li>
 						</volist>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -65,7 +66,8 @@
 									<a href="{:U($vo['_child'][0]['_child'][0]['url'])}" target="<php>echo C(strtolower($vo['name']).'_config.target');</php>">
 										<i class="fa {$vo.icon}"></i>
 										<span>{$vo.title}</span>
-									</a></li>
+									</a>
+									</li>
 								</volist>
 							</ul>
 						</li>
@@ -76,7 +78,8 @@
 							<a href="{:U($vo['_child'][0]['_child'][0]['url'])}" target="<php>echo C(strtolower($vo['name']).'_config.target');</php>">
 								<i class="fa {$vo.icon}"></i>
 								<span>{$vo.title}</span>
-							</a></li>
+							</a>
+							</li>
 						</volist>
 						<?php endif; ?><?php else: ?><?php if (count($_menu_list) > 7): ?>
 						<volist name="_menu_list" id="vo" offset="0" length="7">
@@ -116,7 +119,9 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="{:U('Admin/Index/removeRuntime')}" style="border: 0;text-align: left" class="btn ajax-get no-refresh"><i class="fa fa-trash"></i> 清空缓存</a>
+							<a href="{:U('Admin/Index/removeRuntime')}" style="border: 0;text-align: left" class="btn ajax-get no-refresh">
+								<i class="fa fa-trash"></i> 清空缓存
+							</a>
 						</li>
 						<li>
 							<a target="_blank" href="__ROOT__/"><i class="fa fa-external-link"></i> 打开前台</a>
@@ -131,10 +136,14 @@
 									<a target="_blank" href="__ROOT__/"><i class="fa fa-external-link"></i> 打开前台</a>
 								</li>
 								<li>
-									<a href="{:U('Admin/Index/removeRuntime')}" style="border: 0;text-align: left" class="btn ajax-get no-refresh"><i class="fa fa-trash"></i> 清空缓存</a>
+									<a href="{:U('Admin/Index/removeRuntime')}" style="border: 0;text-align: left" class="btn ajax-get no-refresh">
+										<i class="fa fa-trash"></i> 清空缓存
+									</a>
 								</li>
 								<li>
-									<a href="{:U('Admin/Public/logout')}" class="ajax-get"><i class="fa fa-sign-out"></i> 退出</a>
+									<a href="{:U('Admin/Public/logout')}" class="ajax-get">
+										<i class="fa fa-sign-out"></i> 退出
+									</a>
 								</li>
 							</ul>
 						</li>
@@ -170,7 +179,8 @@
 											<a href="{:U($_ns_second['url'])}">
 												<i class="{$_ns_second.icon}"></i>
 												<span class="nav-label">{$_ns_second.title}</span>
-											</a></li>
+											</a>
+											</li>
 										</volist>
 									</ul>
 								</notempty>
@@ -263,57 +273,63 @@
 				<!-- 多标签后台内容部分 -->
 				<div class="tab-content ct-tab-content" style="height: 100%;">
 					<!-- 首页 -->
-					<div role="tabpanel" class="tab-pane fade in active" id="home">
-						<div class="dashboard clearfix">
-							<div class="col-xs-12 col-sm-6 col-lg-6 ct-update">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<div class="update pull-right"></div>
-										<i class="fa fa-cog"></i> 系统信息
-									</div>
-									<div class="panel-body">
-										<table class="table table-condensed">
-											<tbody>
-											<tr>
-												<td>ThinkPHP版本</td>
-												<td>{$Think.VERSION}</td>
-											</tr>
-											<tr>
-												<td>服务器操作系统</td>
-												<td>{$Think.const.PHP_OS}</td>
-											</tr>
-											<tr>
-												<td>运行环境</td>
-												<td>
-													<?php
+					<if condition="session('user_auth.uid') eq 1">
+						<!-- 后台首页小工具 -->{:hook('AdminIndex')}
+						<div class="col-xs-12 col-sm-6 col-lg-6 ct-update" style="width: 100%;padding-top: 30px">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="update pull-right"></div>
+									<i class="fa fa-cog"></i> 系统信息
+								</div>
+								<div class="panel-body">
+									<table class="table table-condensed">
+										<tbody>
+										<tr>
+											<td>ThinkPHP版本</td>
+											<td>{$Think.VERSION}</td>
+										</tr>
+										<tr>
+											<td>服务器操作系统</td>
+											<td>{$Think.const.PHP_OS}</td>
+										</tr>
+										<tr>
+											<td>运行环境</td>
+											<td>
+												<?php
                                                             $server_software = explode(' ', $_SERVER['SERVER_SOFTWARE']);
                                                             echo $server_software[0];
                                                         ?>
-												</td>
-											</tr>
-											<tr>
-												<td>PHP版本</td>
-												<td><?php echo PHP_VERSION; ?></td>
-											</tr>
-											<tr>
-												<td>MYSQL版本</td>
-												<td>
-													<php>$system_info_mysql = M()->query("select version() as v;");</php>
-													{$system_info_mysql.0.v}
-												</td>
-											</tr>
-											<tr>
-												<td>上传限制</td>
-												<td>{:ini_get('upload_max_filesize')}</td>
-											</tr>
-											</tbody>
-										</table>
-									</div>
+											</td>
+										</tr>
+										<tr>
+											<td>PHP版本</td>
+											<td><?php echo PHP_VERSION; ?></td>
+										</tr>
+										<tr>
+											<td>MYSQL版本</td>
+											<td>
+												<php>$system_info_mysql = M()->query("select version() as v;");</php>
+												{$system_info_mysql.0.v}
+											</td>
+										</tr>
+										<tr>
+											<td>上传限制</td>
+											<td>{:ini_get('upload_max_filesize')}</td>
+										</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
-							<!-- 后台首页小工具 -->{:hook('AdminIndex')}
 						</div>
-					</div>
+						<else/>
+						<div class="col-xs-12 col-sm-6 col-lg-6 ct-update" style="width: 100%;text-align: center">
+							<div class="panel panel-default">
+								<div class="panel-heading" style="font-size: 50px;padding-top: 40px;padding-bottom: 40px">
+									{:C('WELCOME_WORD')}
+								</div>
+							</div>
+						</div>
+					</if>
 				</div>
 				<div class="clearfix footer">
 					<div class="navbar navbar-default" role="navigation">
@@ -327,13 +343,8 @@
 								<ul class="nav navbar-nav">
 									<li>
 										<a href="{:C('WEBSITE_DOMAIN')}" class="text-muted" target="_blank">
-											<span>版权所有 © 2014-<php>echo date("Y",time());</php></span>
+											<span>版权所有 © <php>echo date("Y",time())-1;</php>-<php>echo date("Y",time());</php></span>
 										</a>
-									</li>
-								</ul>
-								<ul class="nav navbar-nav navbar-right">
-									<li>
-										<a class="text-muted pull-right">框架开发：{:C('COMPANY_NAME')}</a>
 									</li>
 								</ul>
 							</div>
