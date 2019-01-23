@@ -1,0 +1,197 @@
+[ 2017-02-07T13:07:00+08:00 ] ::1 /cyw/80hou/wxwap/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0073s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0066s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.032067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004114s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.011333s ]
+ERR: cURL error 28: Operation timed out after 0 milliseconds with 0 out of 0 bytes received (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)
+
+[ 2017-02-07T13:07:13+08:00 ] ::1 /cyw/80hou/index.php/wxwap/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0082s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0072s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.043424s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001929s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003592s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.009771s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Wxwap' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2017-02-07T13:07:14+08:00 ] ::1 /cyw/80hou/index.php/wxwap/weui/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0122s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0129s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0009s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.061530s ]
+INFO: [ app_init ] --END-- [ RunTime:0.061717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0016s ]
+ERR: 无法加载控制器:Weui
+
+[ 2017-02-07T13:07:14+08:00 ] ::1 /cyw/80hou/index.php/wxwap/weui/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0057s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0063s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.029934s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+ERR: 无法加载控制器:Weui
+
+[ 2017-02-07T14:45:24+08:00 ] ::1 /cyw/80hou/index.php/wxwap/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0075s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.039645s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003472s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.013016s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Wxwap' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2017-02-07T14:45:25+08:00 ] ::1 /cyw/80hou/index.php/wxwap/weui/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0049s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0076s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+ERR: 无法加载控制器:Weui
+
+[ 2017-02-07T14:45:25+08:00 ] ::1 /cyw/80hou/index.php/wxwap/weui/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0045s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0045s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+ERR: 无法加载控制器:Weui
+
+[ 2017-02-07T15:57:46+08:00 ] ::1 /cyw/80hou/admin.php?s=/Wxwap/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0110s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0067s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0008s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.041126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0009s ]
+
+[ 2017-02-07T16:00:24+08:00 ] ::1 /cyw/80hou/admin.php?s=/Wxwap/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0078s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0064s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036464s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-07T16:01:51+08:00 ] ::1 /cyw/80hou/admin.php?s=/Wxwap/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0057s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.031304s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+

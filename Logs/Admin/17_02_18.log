@@ -1,0 +1,1037 @@
+[ 2017-02-18T10:45:34+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/dir/image.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0079s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0061s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.032547s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('banner.jpg','/Uploads/2017-02-18/58a7b54edaa51.jpg','','jpg','47591','f5a82b4d8783119b85b7609d813f958b','dfc5f2a8825ac54006e41aa44454dbf1c4364dcb','Local','1','1487385934','1487385934','1')
+
+[ 2017-02-18T10:46:01+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/dir/image.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0076s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0096s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.046364s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001665s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0008s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('banner.jpg','/Uploads/2017-02-18/58a7b5696f02e.jpg','','jpg','47591','f5a82b4d8783119b85b7609d813f958b','dfc5f2a8825ac54006e41aa44454dbf1c4364dcb','Local','1','1487385961','1487385961','1')
+
+[ 2017-02-18T10:48:48+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/dir/image.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0066s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0008s ]
+
+[ 2017-02-18T10:49:06+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/dir/image.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0076s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0085s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T10:49:50+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/callback/callback.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0077s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0076s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034820s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('img_list.jpg','/Uploads/2017-02-18/58a7b64ebcfa2.jpg','','jpg','47908','9e825d61f40ebb66fd708b976129fd98','0dd53fb70781339341fce112b709ca42dcfd5657','Local','1','1487386190','1487386190','1')
+
+[ 2017-02-18T10:50:43+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/callback/callback.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0099s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036740s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0010s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('img_head.jpg','/Uploads/2017-02-18/58a7b6835bb68.jpg','','jpg','5370','10316980b4f6f62b2c28e277859d31d3','f040bee4dc437e9f5c3c35b109ad615e5e0fab83','Local','1','1487386243','1487386243','1')
+
+[ 2017-02-18T10:51:07+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/fileManager.html&path=&order=NAME&dir=image&1487386267644
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0082s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0064s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034224s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+ERR: 非法操作:fileManager
+
+[ 2017-02-18T10:51:17+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/callback/callback.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0083s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.035242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('img_team.jpg','/Uploads/2017-02-18/58a7b6a52fc70.jpg','','jpg','25690','c3c9a7d9d1f3882daf29295e832d21f8','b11e80b53dd12daa81ed46b8138e928a100ce943','Local','1','1487386277','1487386277','1')
+
+[ 2017-02-18T10:54:05+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/dir/image.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0075s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0063s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.031776s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('img_about.jpg','/Uploads/2017-02-18/58a7b74db96cc.jpg','','jpg','25463','7b5bd8aa9543891b44bf71181bb0e743','99c54c1b53c848b53f256bb11bb34ab18de9cc9c','Local','1','1487386445','1487386445','1')
+
+[ 2017-02-18T10:54:14+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0075s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0067s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033299s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T10:54:16+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0087s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0085s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036724s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T10:54:23+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/setStatus/status/delete/ids/10/model/Upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0065s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.006735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007774s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0061s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.018778s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018860s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0056s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0063s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0004s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_upload` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `mke_admin_upload` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `mke_admin_upload` WHERE `id` = 10 [ RunTime:0.0024s ]
+
+[ 2017-02-18T10:54:25+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0082s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0069s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T10:54:52+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/dir/image.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0076s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0064s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.030850s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('footer_ico.png','/Uploads/2017-02-18/58a7b77cdd04d.png','','png','8899','cbcfc6560874b958b6846d25b6ca6782','6fb1be50ca3815d881db913e4e5a74b3b0c1e08c','Local','1','1487386492','1487386492','1')
+
+[ 2017-02-18T10:54:59+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/upload/dir/image.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0084s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0099s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.035741s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+ERR: 1062:Duplicate entry '' for key 'url'
+ [ SQL语句 ] : INSERT INTO `mke_admin_upload` (`name`,`path`,`url`,`ext`,`size`,`md5`,`sha1`,`location`,`uid`,`create_time`,`update_time`,`status`) VALUES ('footer_ico.png','/Uploads/2017-02-18/58a7b783c537d.png','','png','8899','cbcfc6560874b958b6846d25b6ca6782','6fb1be50ca3815d881db913e4e5a74b3b0c1e08c','Local','1','1487386499','1487386499','1')
+
+[ 2017-02-18T10:56:24+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0089s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033678s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T10:56:26+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Upload/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0112s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.038440s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-18T10:56:28+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0096s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036451s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001483s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T10:56:30+08:00 ] ::1 /cyw/80hou/admin.php?s=/Config/index/group/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0109s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0087s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.043212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T10:56:52+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0077s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0068s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.032816s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T10:56:58+08:00 ] ::1 /cyw/80hou/admin.php?s=/Config/group/group/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0063s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033383s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:34:36+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0087s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0064s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033528s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:34:40+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/2/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0083s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:34:43+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/add/pid/4/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0094s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0074s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034956s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:35:13+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/add/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0086s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0069s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.038080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006569s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0066s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.020223s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.020308s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0062s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0069s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0005s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003211s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.041121s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0072s ]
+SQL: UPDATE `mke_admin_module` SET `name`='Wxwap',`title`='微信站',`icon`='fa fa-comments',`icon_color`='#F9B440',`description`='微信站模块',`developer`='yangweijie',`version`='1.0.0',`config`='{\"test\":\"\"}',`admin_menu`='{\"1\":{\"pid\":\"0\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"icon\":\"fa fa-comments\",\"id\":\"1\"},\"2\":{\"pid\":\"1\",\"title\":\"\\u5217\\u8868\",\"icon\":\"fa fa-folder-open-o\",\"id\":\"2\"},\"3\":{\"id\":\"3\",\"pid\":\"2\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"url\":\"Wxwap\\/Index\\/index\",\"icon\":\"fa fa-comments\"},\"4\":{\"pid\":\"1\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\\u8bbe\\u7f6e\",\"url\":\"\",\"icon\":\"fa fa-wrench\",\"sort\":\"\",\"id\":\"4\"},\"5\":{\"pid\":\"4\",\"title\":\"\\u6848\\u4f8b\\u7ef4\\u62a4\",\"url\":\"\",\"icon\":\"fa \",\"sort\":\"\",\"id\":\"5\"}}',`user_nav`='[]' WHERE `id` = 7 [ RunTime:0.0025s ]
+
+[ 2017-02-18T11:35:16+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/7/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0088s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0072s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034417s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001332s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:48:05+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0069s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0066s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:48:07+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0105s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0083s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.040564s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+
+[ 2017-02-18T11:48:10+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/2/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0076s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:48:13+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0091s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0086s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.037863s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:48:18+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0082s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0066s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006988s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0067s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.019960s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.020048s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0062s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0064s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0004s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003745s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.039132s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0064s ]
+SQL: UPDATE `mke_admin_module` SET `name`='Wxwap',`title`='微信站',`icon`='fa fa-comments',`icon_color`='#F9B440',`description`='微信站模块',`developer`='yangweijie',`version`='1.0.0',`config`='{\"test\":\"\"}',`admin_menu`='{\"1\":{\"pid\":\"0\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"icon\":\"fa fa-comments\",\"id\":\"1\"},\"2\":{\"pid\":\"1\",\"title\":\"\\u5217\\u8868\",\"icon\":\"fa fa-folder-open-o\",\"id\":\"2\"},\"3\":{\"id\":\"3\",\"pid\":\"2\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"url\":\"Wxwap\\/Index\\/index\",\"icon\":\"fa fa-comments\"},\"4\":{\"pid\":\"1\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\\u8bbe\\u7f6e\",\"url\":\"\",\"icon\":\"fa fa-wrench\",\"sort\":\"\",\"id\":\"4\"},\"5\":{\"id\":\"5\",\"pid\":\"4\",\"title\":\"\\u6848\\u4f8b\\u7ef4\\u62a4\",\"url\":\"caseset\",\"icon\":\"fa \",\"sort\":\"\"}}',`user_nav`='[]' WHERE `id` = 7 [ RunTime:0.0024s ]
+
+[ 2017-02-18T11:48:20+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/7/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0092s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0065s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:48:43+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0098s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.046774s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-18T11:48:46+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/2/module_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0077s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033420s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:48:51+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/4/module_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0082s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0075s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-18T11:48:57+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0072s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:49:00+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0099s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0082s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.038449s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-18T11:49:02+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/2/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0085s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0074s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.038182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-18T11:49:05+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/add/pid/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0081s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:49:08+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0109s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0078s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.040319s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-18T11:50:10+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0110s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0086s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.043207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.006447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007615s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0069s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.021279s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.021375s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0061s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0064s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0005s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004083s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.042827s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0071s ]
+SQL: UPDATE `mke_admin_module` SET `name`='Wxwap',`title`='微信站',`icon`='fa fa-comments',`icon_color`='#F9B440',`description`='微信站模块',`developer`='yangweijie',`version`='1.0.0',`config`='{\"test\":\"\"}',`admin_menu`='{\"1\":{\"pid\":\"0\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"icon\":\"fa fa-comments\",\"id\":\"1\"},\"2\":{\"pid\":\"1\",\"title\":\"\\u5217\\u8868\",\"icon\":\"fa fa-folder-open-o\",\"id\":\"2\"},\"3\":{\"id\":\"3\",\"pid\":\"2\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"url\":\"Wxwap\\/Index\\/index\",\"icon\":\"fa fa-comments\"},\"4\":{\"pid\":\"1\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\\u8bbe\\u7f6e\",\"url\":\"\",\"icon\":\"fa fa-wrench\",\"sort\":\"\",\"id\":\"4\"},\"5\":{\"id\":\"5\",\"pid\":\"4\",\"title\":\"\\u6848\\u4f8b\\u7ef4\\u62a4\",\"url\":\"wxwap\\/admin\\/caseset\",\"icon\":\"fa \",\"sort\":\"\"}}',`user_nav`='[]' WHERE `id` = 7 [ RunTime:0.0024s ]
+
+[ 2017-02-18T11:50:13+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/7/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0085s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0073s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036671s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+
+[ 2017-02-18T11:50:30+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0086s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0072s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:51:20+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0081s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0075s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.032914s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:51:23+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/2/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0067s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0073s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.031800s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:51:29+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0081s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0069s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.034914s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:51:47+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0086s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0071s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036922s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0008s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.008360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009863s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.023708s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023819s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0074s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0067s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0004s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003408s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.043061s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0088s ]
+SQL: UPDATE `mke_admin_module` SET `name`='Wxwap',`title`='微信站',`icon`='fa fa-comments',`icon_color`='#F9B440',`description`='微信站模块',`developer`='yangweijie',`version`='1.0.0',`config`='{\"test\":\"\"}',`admin_menu`='{\"1\":{\"pid\":\"0\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"icon\":\"fa fa-comments\",\"id\":\"1\"},\"2\":{\"pid\":\"1\",\"title\":\"\\u5217\\u8868\",\"icon\":\"fa fa-folder-open-o\",\"id\":\"2\"},\"3\":{\"id\":\"3\",\"pid\":\"2\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"url\":\"Wxwap\\/Index\\/index\",\"icon\":\"fa fa-comments\"},\"4\":{\"pid\":\"1\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\\u8bbe\\u7f6e\",\"url\":\"\",\"icon\":\"fa fa-wrench\",\"sort\":\"\",\"id\":\"4\"},\"5\":{\"id\":\"5\",\"pid\":\"4\",\"title\":\"\\u6848\\u4f8b\\u7ef4\\u62a4\",\"url\":\"Admin\\/Systemset\\/caseset\",\"icon\":\"fa \",\"sort\":\"\"}}',`user_nav`='[]' WHERE `id` = 7 [ RunTime:0.0023s ]
+
+[ 2017-02-18T11:51:50+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/7/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0084s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0074s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.038944s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:51:51+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Systemset/caseset.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0081s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0071s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.032864s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+ERR: 无法加载控制器:Systemset
+
+[ 2017-02-18T11:52:17+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0082s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.035403s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:52:22+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/2/module_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0093s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036472s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:52:25+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/4/module_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0092s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.036492s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-02-18T11:52:32+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Systemset/caseset.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0082s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0076s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.035798s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+ERR: 无法加载控制器:Systemset
+
+[ 2017-02-18T11:54:07+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Systemset/caseset.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0084s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0065s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.035277s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+ERR: 无法加载控制器:Systemset
+
+[ 2017-02-18T11:54:10+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0085s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0075s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033813s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:54:12+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/2/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.040180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T11:54:15+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0089s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0082s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.037040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2017-02-18T11:54:21+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/edit/id/5/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0079s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.037851s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0008s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.008484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009637s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0069s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.019898s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019991s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0059s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0064s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0006s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003949s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.039875s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0071s ]
+SQL: UPDATE `mke_admin_module` SET `name`='Wxwap',`title`='微信站',`icon`='fa fa-comments',`icon_color`='#F9B440',`description`='微信站模块',`developer`='yangweijie',`version`='1.0.0',`config`='{\"test\":\"\"}',`admin_menu`='{\"1\":{\"pid\":\"0\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"icon\":\"fa fa-comments\",\"id\":\"1\"},\"2\":{\"pid\":\"1\",\"title\":\"\\u5217\\u8868\",\"icon\":\"fa fa-folder-open-o\",\"id\":\"2\"},\"3\":{\"id\":\"3\",\"pid\":\"2\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\",\"url\":\"Wxwap\\/Index\\/index\",\"icon\":\"fa fa-comments\"},\"4\":{\"pid\":\"1\",\"title\":\"\\u5fae\\u4fe1\\u7ad9\\u8bbe\\u7f6e\",\"url\":\"\",\"icon\":\"fa fa-wrench\",\"sort\":\"\",\"id\":\"4\"},\"5\":{\"id\":\"5\",\"pid\":\"4\",\"title\":\"\\u6848\\u4f8b\\u7ef4\\u62a4\",\"url\":\"Wxwap\\/Systemset\\/caseset\",\"icon\":\"fa \",\"sort\":\"\"}}',`user_nav`='[]' WHERE `id` = 7 [ RunTime:0.0067s ]
+
+[ 2017-02-18T11:54:23+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Addon/execute/_addons/ModelConfigEditor/_controller/ModelConfigEditor/_action/menus/id/7/module_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0095s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0088s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.037090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2017-02-18T12:58:26+08:00 ] ::1 /cyw/80hou/admin.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0098s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0065s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.037890s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+

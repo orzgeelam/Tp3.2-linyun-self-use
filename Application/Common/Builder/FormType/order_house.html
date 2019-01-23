@@ -1,0 +1,28 @@
+<case value="order_house">
+<div class="form-group item_{$[type]form.name} {$[type]form.extra_class|default=''}">
+	<label class="left control-label">{$[type]form.title}：</label>
+        <div class="right">
+			<notempty name="house_list">
+
+				<p>房源id：{$house_list[0]['house_id']}</p>
+	        	<p>房间号：{$house_list[0]['room_number']}</p>
+	        	<p>房源标题：{$house_list[0]['title']}</p>
+	        	<p>目的地：{$house_list[0]['destination_name']}</p>
+				<table class="table table-bordered" id="spec_input_tab">
+					<tbody>
+						<tr>
+							<td><b>时间</b></td>
+							<td><b>价格</b></td>
+						</tr>
+						<volist name="house_list" id="house">
+						<tr>
+							<td>{$house['date']}</td>
+							<td>{$house['house_price']}</td>
+						</tr>
+						</volist>
+					</tbody>
+				</table>
+			</notempty>
+		</div>
+</div>
+</case>

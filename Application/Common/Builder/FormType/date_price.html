@@ -1,0 +1,74 @@
+<case value="date_price">
+<div class="form-group item_{$[type]form.name} {$[type]form.extra_class|default=''}">
+	<label class="left control-label">节日价格：</label>
+	<div class="right">
+        <div class="right">
+			<div id="goods_spec_table2">
+				<table class="table table-bordered">
+					<tbody id="date_price_tab">
+						<tr>
+							<td><b>日期</b></td>
+							<td><b>价格</b></td>
+							<td><b>操作
+
+								</b>
+							</td>
+						</tr>
+						<notempty name="date_price">
+							<volist name="date_price" id="date_item">
+							<tr>
+								<td>
+									<input name="date_price[date][]" type="text" class="form-control input date price_date" value="<?php echo $date_item['date'];?>">
+								</td>
+								<td>
+									<input name="date_price[price][]" style="padding: 5px 12px;" value="{$date_item['price']}">
+								</td>
+								<td>
+									<a name="delete" title="删除" class="label label-danger-outline label-pill date_price_del"  href="javascript:;">删除</a>
+								</td>
+							</tr>
+							</volist>
+						</notempty>
+					</tbody>
+				</table>
+				<button type="button" class="btn btn-default add_date_price">添加节日价格</button>
+			</div>
+		</div>
+    </div>
+	<script>
+	$(function(){
+		$(document).on('click', '.date_price_del', function(){
+			$(this).parents('tr').remove();
+		});
+		$(".add_date_price").on('click', function(){
+			html = '<tr>'+
+						'<td>'+
+							'<input name="date_price[date][]" type="text" class="form-control input date price_date" value="">'+
+						'</td>'+
+						'<td>'+
+							'<input name="date_price[price][]" style="padding: 5px 12px;" value="">'+
+						'</td>'+
+						'<td>'+
+							'<a name="delete" title="删除" class="label label-danger-outline label-pill date_price_del"  href="javascript:;">删除</a>'+
+						'</td>'+
+					'</tr>';
+			$("#date_price_tab").append(html);
+			price_date_pick();
+		});
+		price_date_pick();
+	});
+	function price_date_pick() {
+		$(".price_date").each(function(index, el) {
+			$(el).datetimepicker({
+		        format      : 'yyyy-mm-dd',
+		        autoclose   : true,
+		        minView     : 'month',
+		        todayBtn    : 'linked',
+		        language    : 'zh-CN',
+		        fontAwesome : true
+		    });
+		});
+	}
+	</script>
+</div>
+</case>

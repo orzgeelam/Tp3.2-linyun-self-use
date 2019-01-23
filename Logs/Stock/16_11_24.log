@@ -1,0 +1,421 @@
+[ 2016-11-24T09:27:49+08:00 ] 192.168.0.119 /cytest/index.php?s=stock/stock/scanbarcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0239s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0298s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0256s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0470s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.242715s ]
+INFO: [ app_init ] --END-- [ RunTime:0.243565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0249s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0345s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.066802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068112s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0235s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0288s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0265s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0226s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.131118s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.131242s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0268s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0228s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0224s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0271s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0240s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.075569s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.052325s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0230s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000627s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000726s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2016-11-24T09:28:38+08:00 ] 192.168.0.122 /cytest/index.php?s=stock/stock/scanbarcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0348s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0395s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0278s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.270495s ]
+INFO: [ app_init ] --END-- [ RunTime:0.270608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0287s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0328s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.066159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.067156s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0454s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0268s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0262s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0267s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.160192s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.160317s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0402s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0278s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0270s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0264s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.083666s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.071443s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0267s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001798s ]
+
+[ 2016-11-24T09:30:51+08:00 ] 192.168.0.119 /cytest/index.php?s=stock/stock/scanbarcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0321s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0272s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0303s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0277s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.538359s ]
+INFO: [ app_init ] --END-- [ RunTime:0.538536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0368s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0390s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.080778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.081852s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0500s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0363s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0293s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0351s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0270s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.184583s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.184678s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0278s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0278s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0283s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0299s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.088414s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.059545s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0294s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-11-24T09:31:59+08:00 ] 192.168.0.122 /cytest/index.php?s=stock/stock/scanbarcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0314s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0708s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0303s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.352356s ]
+INFO: [ app_init ] --END-- [ RunTime:0.352512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001659s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0333s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0319s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.074697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.076569s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0325s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0334s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0311s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0355s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.181487s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.181767s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0319s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0310s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0303s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0300s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0302s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.095170s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.071877s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0311s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2016-11-24T11:00:09+08:00 ] ::1 /cytest/index.php?s=stock/stock/scanbarcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0282s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0282s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0296s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0308s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.261402s ]
+INFO: [ app_init ] --END-- [ RunTime:0.261618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002743s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0275s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0419s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.085132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.088157s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0281s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0393s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0329s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0266s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.164316s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.164488s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0277s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0384s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0370s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.1357s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.214514s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.061653s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0297s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001378s ]
+
+[ 2016-11-24T11:00:11+08:00 ] ::1 /cytest/index.php?s=/Stock/Stock/changestock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0310s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0302s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0316s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0301s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.258175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.258288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0312s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0462s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.081778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.082729s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0472s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0536s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0349s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0345s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.208434s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.208522s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0358s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0418s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0290s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0498s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0353s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.117167s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.080507s ]
+ERR: 非法操作:changestock
+
+[ 2016-11-24T11:02:11+08:00 ] ::1 /cytest/index.php?s=/Stock/Stock/changestock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0298s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0318s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0281s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.262834s ]
+INFO: [ app_init ] --END-- [ RunTime:0.263025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0373s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0310s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.073405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.074358s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0283s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0325s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0277s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0304s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0299s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.155521s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.155620s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0297s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0296s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0294s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0315s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0315s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.094851s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.062103s ]
+ERR: 非法操作:changestock
+
+[ 2016-11-24T13:32:19+08:00 ] ::1 /cytest/index.php?s=stock/stock/scanbarcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0348s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0240s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0246s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.490858s ]
+INFO: [ app_init ] --END-- [ RunTime:0.491002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0234s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0243s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.054005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.055128s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0292s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0305s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0403s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0223s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.150816s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.150912s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0258s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0209s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0216s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0219s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.067063s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.053410s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0218s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2016-11-24T13:32:25+08:00 ] ::1 /cytest/index.php?s=stock/stock/scanbarcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0256s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0246s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0264s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.226182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.226385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0247s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0264s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.056210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.057179s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0255s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0265s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0310s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0264s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.139678s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.139791s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0238s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0249s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0253s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0268s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.079530s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.053449s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0259s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-11-24T13:32:27+08:00 ] ::1 /cytest/index.php?s=/Stock/Stock/changestock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0282s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0306s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0364s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0263s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.259982s ]
+INFO: [ app_init ] --END-- [ RunTime:0.260139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0293s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0303s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.065028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.066205s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0295s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0281s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0327s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0357s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0274s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.160462s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.160591s ]
+SQL: SHOW COLUMNS FROM `mke_user` [ RunTime:0.0348s ]
+SQL: SELECT * FROM `mke_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0287s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.5072s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0268s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0287s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.565499s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.067001s ]
+ERR: 非法操作:changestock
+

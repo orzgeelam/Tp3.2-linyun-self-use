@@ -1,0 +1,306 @@
+[ 2017-01-12T10:21:01+08:00 ] ::1 /cytest/admin.php?s=/Stock/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0048s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0052s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.028098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006711s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0056s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.021446s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.021555s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0056s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0055s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0007s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003137s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.033107s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001579s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001682s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001877s ]
+
+[ 2017-01-12T10:21:03+08:00 ] ::1 /cytest/admin.php?s=/Stock/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0047s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0065s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.030609s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.006839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007816s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0050s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.018351s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018457s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0062s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0045s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0004s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002663s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.030453s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001574s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001674s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-01-12T10:21:09+08:00 ] ::1 /cytest/admin.php?s=/Stock/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0069s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0053s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.028248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007069s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0055s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.017868s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017982s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0052s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0048s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0006s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003389s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.030463s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001433s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002132s ]
+
+[ 2017-01-12T10:21:22+08:00 ] ::1 /cytest/admin.php?s=/Stock/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0056s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.027185s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006792s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0049s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.016745s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016840s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0047s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0055s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0007s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004626s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.033082s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001537s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2017-01-12T10:21:25+08:00 ] ::1 /cytest/admin.php?s=/Stock/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0063s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0058s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.028567s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006086s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0056s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.017022s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017137s ]
+SQL: SHOW COLUMNS FROM `mke_admin_user` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `mke_admin_group` [ RunTime:0.0044s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_access` [ RunTime:0.0056s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `group` FROM `mke_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1 ORDER BY `sort` asc,`id` asc  [ RunTime:0.0004s ]
+SQL: SELECT `admin_menu` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ action_begin ] --START--
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003034s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.029784s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: forbid D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 568 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\cytest\Application\Common\Builder\ListBuilder.class.php 第 595 行.
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Stock' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001641s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001716s ]
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\cytest\Runtime\Cache\Stock\d2db961455aa86f1865a8062c7758332.php 第 707 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002685s ]
+

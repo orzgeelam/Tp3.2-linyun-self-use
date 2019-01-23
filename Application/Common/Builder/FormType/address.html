@@ -1,0 +1,57 @@
+<case value="address">
+    <div class="form-group item_{$[type]form.name} {$[type]form.extra.class|default=''}">
+        <label class="left control-label">{$[type]form.title}：</label>
+        <div class="right">
+            <select name="prov" class="form-control cui-select select area" style="width:140px;">
+                <option value=''>请选择：</option>
+                <foreach name="province_list" item="option" key="option_key">
+                    <option value="{$option_key}" <eq name="prov" value="$option_key"> selected</eq>>{$option}</option>
+                </foreach>
+            </select>
+            <select name="city" class="form-control cui-select select area"  style="width:140px;">
+                <option value=''>请选择：</option>
+                <foreach name="city_list" item="option" key="option_key">
+                    <option value="{$option_key}" <eq name="city" value="$option_key"> selected</eq>>{$option}</option>
+                </foreach>
+            </select>
+            <select name="country" class="form-control cui-select select area"  style="width:140px;">
+                <option value=''>请选择：</option>
+                <foreach name="district_list" item="option" key="option_key">
+                    <option value="{$option_key}" <eq name="country" value="$option_key"> selected</eq>>{$option}</option>
+                </foreach>
+            </select>
+            <input type="text" class="form-control input text" name="address" value="{$address|default=''}"  style="width:290px;display: inline;">
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('select.area').on('change', function(){
+                select = $(this);
+                name = select.val();
+                $.ajax({
+                    url:"{:U('area')}",
+                    type:'post',
+                    data:{'name':name},
+                    dataType:'json',
+                    success:function(data){
+                        next_div = select.next('.area');
+                        if(next_div.length>0){
+                            html = '<option value="">请选择：</option>';
+                            if(data){
+                                $.each(data, function(k, v){
+                                    html+='<option value="'+k+'">'+v+'</option>';
+                                });
+                            }
+                            next_div.html(html);
+                            next_div_2 =  next_div.next('.area');
+                            if(next_div_2.length>0){
+                                next_div_2.html('<option value="">请选择：</option>');
+                            }
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+
+</case>

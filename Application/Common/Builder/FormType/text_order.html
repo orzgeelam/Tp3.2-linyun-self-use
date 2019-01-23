@@ -1,0 +1,47 @@
+<case value="text_order">
+    <div class="form-group item_{$[type]form.name} {$[type]form.extra.class|default=''}">
+        <label class="left control-label">{$[type]form.title}：</label>
+        <div class="right">
+            <notempty name="[type]form.value">
+                <?php
+                    if (is_array($[type]form['value'])) {
+                        $datas = $[type]form['value'];
+                    } else {
+                        $datas = explode(',',$[type]form['value']);
+                    }
+                ?>
+                <foreach name="datas" item="data">
+                    <div class="ordernum_list">
+                        <input type="text" class="form-control input text" name="{$[type]form.name}[]" value="{$data}" placeholder="{$[type]form.tip}" {$[type]form.extra.attr|default=''}>
+                    </div>
+                </foreach>
+                <else/>
+                <div class="ordernum_list">
+                    <input type="text" class="form-control input text" name="{$[type]form.name}[]" value="{$[type]form.value|default=''}" placeholder="{$[type]form.tip}" {$[type]form.extra.attr|default=''}>
+                    <span class="add">+</span>
+                </div>
+            </notempty>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            //新增栏目
+            $(document).on('click',".add",function(){
+                var _this = $(this);
+                //栏目数量
+                var len = _this.closest('.right').find('.ordernum_list').length;
+                if(len >= 5) return false;
+
+                var html_input = _this.closest('.ordernum_list').find('input').prop("outerHTML");
+                var html = '<div class="ordernum_list">' +html_input+'<span class="del">-</span></div>';
+                _this.closest('.right').append(html);
+            });
+
+            //删除栏目
+            $(document).on('click',".del",function(){
+                $(this).closest('.ordernum_list').remove();
+            });
+        });
+    </script>
+</case>

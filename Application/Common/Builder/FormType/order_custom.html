@@ -1,0 +1,29 @@
+<case value="order_custom">
+<div class="form-group item_{$[type]form.name} {$[type]form.extra_class|default=''}">
+	<label class="left control-label">{$[type]form.title}：</label>
+	<div class="right">
+        <div class="right">
+			<notempty name="custom_list">
+				<table class="table table-bordered" id="spec_input_tab">
+					<tbody>
+						<tr>
+							<td><b>目的地</b></td>
+							<td><b>成人人数</b></td>
+							<td><b>儿童人数</b></td>
+							<td><b>出发时间</b></td>
+						</tr>
+						<volist name="custom_list" id="custom">
+						<tr>
+							<td>{$custom['destination_name']}</td>
+							<td>{$custom['adults_number']}</td>
+							<td>{$custom['children_number']}</td>
+							<td>{$custom['departure_time']}</td>
+						</tr>
+						</volist>
+					</tbody>
+				</table>
+			</notempty>
+		</div>
+    </div>
+</div>
+</case>

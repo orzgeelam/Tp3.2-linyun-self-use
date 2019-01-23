@@ -1,0 +1,401 @@
+[ 2017-01-04T11:47:00+08:00 ] ::1 /cytest/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0291s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0267s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0243s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.233109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.233213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0424s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0291s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.078515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.079672s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0286s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0297s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0277s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0286s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0278s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.153884s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.154088s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0281s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Home' LIMIT 1   [ RunTime:0.0296s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined variable: jsapi D:\phpStudy\WWW\cytest\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_WEUI__/css/jquery-weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0262s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0279s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0254s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.233486s ]
+INFO: [ app_init ] --END-- [ RunTime:0.233642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0256s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0365s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.065124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.066271s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_WEUI__/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0291s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0293s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0301s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0320s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.266383s ]
+INFO: [ app_init ] --END-- [ RunTime:0.266532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0272s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0362s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.067023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068093s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_CSS__/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0339s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0289s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0282s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0239s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.249268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.249415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0255s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0290s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.058287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.059379s ]
+ERR: 无法加载控制器:__HTML_CSS__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_CSS__/reset.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0308s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0301s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0285s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0290s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.259694s ]
+INFO: [ app_init ] --END-- [ RunTime:0.259838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0379s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0406s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.082387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.083508s ]
+ERR: 无法加载控制器:__HTML_CSS__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_WEUI__/lib/jquery-2.1.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0287s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0310s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0370s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.272993s ]
+INFO: [ app_init ] --END-- [ RunTime:0.273152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001441s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0321s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0345s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.071010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.072655s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_WEUI__/js/jquery-weui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0335s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0365s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0319s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0324s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.289788s ]
+INFO: [ app_init ] --END-- [ RunTime:0.289961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0322s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0322s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.068837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.070335s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_JS__/jweixin-1.0.0.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0287s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0262s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0278s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0261s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.243741s ]
+INFO: [ app_init ] --END-- [ RunTime:0.243956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003446s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0275s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0345s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.070547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.074308s ]
+ERR: 无法加载控制器:__HTML_JS__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_JS__/functions.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0327s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0341s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0364s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.291007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.291279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002566s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0401s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0411s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.087948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.090810s ]
+ERR: 无法加载控制器:__HTML_JS__
+
+[ 2017-01-04T11:47:01+08:00 ] ::1 /cytest/__HTML_JS__/js.cookie.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0398s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0321s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0333s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.285697s ]
+INFO: [ app_init ] --END-- [ RunTime:0.285935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001818s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0349s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0417s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.083879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.085951s ]
+ERR: 无法加载控制器:__HTML_JS__
+
+[ 2017-01-04T11:47:02+08:00 ] ::1 /cytest/__HTML_JS__/jweixin-1.0.0.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0400s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0355s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0346s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0647s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.826777s ]
+INFO: [ app_init ] --END-- [ RunTime:0.826926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002125s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.2652s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0339s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.305097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.307478s ]
+ERR: 无法加载控制器:__HTML_JS__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0074s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0067s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.032490s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006194s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `mke_admin_hook` [ RunTime:0.0068s ]
+SQL: SELECT `name`,`addons` FROM `mke_admin_hook`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mke_admin_addon` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('后台首页小工具','ModelConfigEditor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `mke_admin_addon` WHERE `status` = 1 AND `name` IN ('RocketToTop')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.019486s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019598s ]
+SQL: SELECT `user_nav` FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `mke_admin_module` WHERE `name` = 'Home' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: jsapi D:\phpStudy\WWW\cytest\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_WEUI__/lib/weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0087s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0078s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.042593s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002315s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008367s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_WEUI__/lib/jquery-2.1.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0168s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0189s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.088952s ]
+INFO: [ app_init ] --END-- [ RunTime:0.089122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007162s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_WEUI__/js/jquery-weui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0191s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0179s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.081400s ]
+INFO: [ app_init ] --END-- [ RunTime:0.081558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.009326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010843s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_CSS__/reset.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0340s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0179s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.093853s ]
+INFO: [ app_init ] --END-- [ RunTime:0.094518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+ERR: 无法加载控制器:__HTML_CSS__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_WEUI__/css/jquery-weui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0151s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0244s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.085591s ]
+INFO: [ app_init ] --END-- [ RunTime:0.085810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.008927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010474s ]
+ERR: 无法加载控制器:__HTML_WEUI__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_CSS__/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0184s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0209s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.084154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.084318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002605s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.006711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010073s ]
+ERR: 无法加载控制器:__HTML_CSS__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_JS__/functions.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0091s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0088s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.044099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.044287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0008s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006986s ]
+ERR: 无法加载控制器:__HTML_JS__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_JS__/js.cookie.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0105s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.042219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006844s ]
+ERR: 无法加载控制器:__HTML_JS__
+
+[ 2017-01-04T15:42:07+08:00 ] ::1 /cytest/__HTML_JS__/jweixin-1.0.0.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `mke_admin_config` [ RunTime:0.0121s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mke_admin_module` [ RunTime:0.0084s ]
+SQL: SELECT `name` FROM `mke_admin_module` WHERE `status` = 1 AND `is_system` = 0  [ RunTime:0.0005s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.042752s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+SQL: SELECT `name`,`value`,`type` FROM `mke_admin_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mke_admin_module` WHERE `status` = 1  [ RunTime:0.0006s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.005352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006679s ]
+ERR: 无法加载控制器:__HTML_JS__
+
