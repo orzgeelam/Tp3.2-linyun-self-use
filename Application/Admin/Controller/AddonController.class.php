@@ -18,8 +18,7 @@ class AddonController extends AdminController
 		// 获取所有插件信息
 		$p            = !empty($_GET["p"]) ? $_GET['p'] : 1;
 		$addon_object = D('Addon');
-		$addons       = $addon_object
-			->getAllAddon();
+		$addons       = $addon_object->getAllAddon();
 		// 使用Builder快速建立列表页面。
 		$builder = new \Common\Builder\ListBuilder();
 		$builder->setMetaTitle('插件列表')// 设置页面标题

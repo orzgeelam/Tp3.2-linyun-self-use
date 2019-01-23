@@ -60,7 +60,7 @@ class WxmenuController extends AdminController
 	{
 		if (IS_POST) {
 			if (D('wxmenu')->add(I('post.'))) {
-				$this->success('添加成功');
+				$this->success('添加成功', U('index'));
 			} else {
 				trace(D('wxmenu')->getError());
 				$this->error('添加失败');
@@ -96,7 +96,7 @@ class WxmenuController extends AdminController
 	{
 		if (IS_POST) {
 			if (false !== D('wxmenu')->where(['id' => $id])->save(I('post.'))) {
-				$this->success('更新成功');
+				$this->success('更新成功', U('index'));
 			} else {
 				$this->error('更新失败');
 			}

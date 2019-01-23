@@ -78,6 +78,7 @@ class AddonModel extends ModelModel
 				}
 			}
 		}
+
 		foreach ($addons as &$val) {
 			switch ($val['status']) {
 				case '-1':  // 未安装
@@ -86,9 +87,11 @@ class AddonModel extends ModelModel
 					$val['right_button']['install']['attribute'] = 'class="label label-success ajax-get" href="'.U('install', ['addon_name' => $val['name']]).'"';
 					break;
 				case '0':  // 禁用
-					$val['status']                                 = '<i class="fa fa-ban" style="color:red"></i>';
-					$val['right_button']['config']['title']        = '设置';
-					$val['right_button']['config']['attribute']    = 'class="label label-info" href="'.U('config', ['id' => $val['id']]).'"';
+					$val['status'] = '<i class="fa fa-ban" style="color:red"></i>';
+					if ($val['config'] != '""') {
+						$val['right_button']['config']['title']     = '设置';
+						$val['right_button']['config']['attribute'] = 'class="label label-info" href="'.U('config', ['id' => $val['id']]).'"';
+					}
 					$val['right_button']['forbid']['title']        = '启用';
 					$val['right_button']['forbid']['attribute']    = 'class="label label-success ajax-get" href="'.U('setStatus', ['status' => 'resume', 'ids' => $val['id']]).'"';
 					$val['right_button']['uninstall']['title']     = '卸载';
@@ -99,9 +102,11 @@ class AddonModel extends ModelModel
 					}
 					break;
 				case '1':  // 正常
-					$val['status']                                 = '<i class="fa fa-check" style="color:green"></i>';
-					$val['right_button']['config']['title']        = '设置';
-					$val['right_button']['config']['attribute']    = 'class="label label-info" href="'.U('config', ['id' => $val['id']]).'"';
+					$val['status'] = '<i class="fa fa-check" style="color:green"></i>';
+					if ($val['config'] != '""') {
+						$val['right_button']['config']['title']     = '设置';
+						$val['right_button']['config']['attribute'] = 'class="label label-info" href="'.U('config', ['id' => $val['id']]).'"';
+					}
 					$val['right_button']['forbid']['title']        = '禁用';
 					$val['right_button']['forbid']['attribute']    = 'class="label label-warning ajax-get" href="'.U('setStatus', ['status' => 'forbid', 'ids' => $val['id']]).'"';
 					$val['right_button']['uninstall']['title']     = '卸载';
