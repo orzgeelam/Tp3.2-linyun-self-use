@@ -10,7 +10,7 @@ namespace Addons\Alidayu;
 use Common\Controller\Addon;
 /**
  * 阿里大鱼短信插件
- * @author jry <598821125@qq.com>
+ *
  */
 class AlidayuAddon extends Addon{
     /**

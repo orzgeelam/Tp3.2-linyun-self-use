@@ -21,7 +21,7 @@ class BaseController extends ControllerController
 
 	/**
 	 * 初始化方法
-	 * @author jry <598821125@qq.com>
+	 *
 	 */
 	protected function _initialize()
 	{
