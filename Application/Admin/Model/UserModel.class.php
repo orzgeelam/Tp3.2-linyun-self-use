@@ -26,7 +26,7 @@ class UserModel extends ModelModel
 			['username', '/^(?!_)(?!\d)(?!.*?_$)[\w]+$/', '用户名只可含有数字、字母、下划线且不以下划线开头结尾，不以数字开头！', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH],
 			//验证密码
 			['password', 'require', '密码不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_INSERT],
-			['password', '6,30', '密码长度为6-30位', self::MUST_VALIDATE, 'length', self::MODEL_INSERT],
+			['password', '5,30', '密码长度为6-30位', self::MUST_VALIDATE, 'length', self::MODEL_INSERT],
 			// ['password', '/(?!^(\d+|[a-zA-Z]+|[~!@#$%^&*()_+{}:"<>?\-=[\];\',.\/]+)$)^[\w~!@#$%^&*()_+{}:"<>?\-=[\];\',.\/]+$/', '密码至少由数字、字符、特殊字符三种中的两种组成', self::MUST_VALIDATE, 'regex', self::MODEL_INSERT],
 			['repassword', 'password', '两次输入的密码不一致', self::EXISTS_VALIDATE, 'confirm', self::MODEL_UPDATE],
 			// 验证注册来源

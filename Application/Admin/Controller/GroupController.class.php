@@ -20,8 +20,10 @@ class GroupController extends AdminController
 			$condition,
 		];
 		// 获取所有部门
-		$map['status'] = ['neq', '0']; //禁用和正常状态
-		$map['id']     = ['neq', 1];
+		// $map['status'] = ['neq', '0']; //禁用和正常状态
+		if (session('user_auth.uid') != 1) {
+			$map['id'] = ['neq', 1];
+		}
 		$data_list     = D('Group')
 			->where($map)
 			->order('sort asc, id asc')
@@ -40,7 +42,7 @@ class GroupController extends AdminController
 		        ->addTopButton('resume')// 添加启用按钮
 		        ->addTopButton('forbid')// 添加禁用按钮
 		        ->addTopButton('delete')// 添加删除按钮
-		        ->addSearchItem('keyword', 'text', '', '部门名称')
+		        // ->addSearchItem('keyword', 'text', '', '部门名称')
 		        ->addTableColumn('title_show', '部门名称')
 		        ->addTableColumn('icon', '图标', 'icon')
 		        ->addTableColumn('sort', '排序')
@@ -50,9 +52,11 @@ class GroupController extends AdminController
 		        ->addRightButton('edit')// 添加编辑按钮
 		        ->addRightButton('forbid')// 添加禁用/启用按钮
 		        ->addRightButton('delete')// 添加删除按钮
-		        ->alterTableData(['key' => 'id', 'value' => '1'], ['right_button' => $right_button])// 修改列表数据
-		        // ->alterTableData(['key' => 'id', 'value' => '2'], ['right_button' => $right_button2])// 修改列表数据
-		        ->display();
+		        ->alterTableData(['key' => 'id', 'value' => '1'], ['right_button' => $right_button]);// 修改列表数据
+		if (session('user_auth.uid') != 1) {
+			$builder->alterTableData(['key' => 'id', 'value' => '2'], ['right_button' => $right_button2]);// 修改列表数据
+		}
+		$builder->display();
 	}
 
 	/**

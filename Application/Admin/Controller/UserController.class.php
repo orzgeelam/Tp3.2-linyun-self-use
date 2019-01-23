@@ -16,14 +16,16 @@ class UserController extends AdminController
 		// 搜索
 		$keyword                     = I('keyword', '', 'string');
 		$condition                   = ['like', '%'.$keyword.'%'];
-		$map['id|username|nickname'] = [
-			$condition,
+		$map['username|nickname'] = [
 			$condition,
 			$condition,
 			'_multi' => true,
 		];
 		// 获取所有用户
 		// $map['status'] = ['neq', '0']; // 禁用和正常状态
+		if (session('user_auth.uid') != 1) {
+			$map['id'] = ['neq', 1];
+		}
 		$this->extendDates($map, 'create_time', 'timestamp');
 		$p           = !empty($_GET["p"]) ? $_GET['p'] : 1;
 		$user_object = D('User');
@@ -43,7 +45,7 @@ class UserController extends AdminController
 		        ->addTopButton('resume')// 添加启用按钮
 		        ->addTopButton('forbid')// 添加禁用按钮
 		        ->addTopButton('delete')// 添加删除按钮
-		        ->addSearchItem('keyword', 'text', '', '请输入ID/用户名')
+		        // ->addSearchItem('keyword', 'text', '', '用户名')
 		        ->addTableColumn('id', 'UID')
 		        ->addTableColumn('nickname', '昵称')
 		        ->addTableColumn('username', '用户名')
