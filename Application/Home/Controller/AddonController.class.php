@@ -17,7 +17,7 @@ class AddonController extends HomeController
 {
     /**
      * 外部执行插件方法
-     * @author jry <598821125@qq.com>
+     *
      */
     public function execute($_addons = null, $_controller = null, $_action = null)
     {

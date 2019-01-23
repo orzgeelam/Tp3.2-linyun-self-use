@@ -567,7 +567,7 @@ class Date {
      * @param string $type  类型. normal | mohu | full | ymd | other
      * @param string $alt   已失效
      * @return string
-     * @author jry <598821125@qq.com>
+     *
      */
     public function friendlyDate($type = 'normal', $alt = 'false'){
         $sTime = $this->date;

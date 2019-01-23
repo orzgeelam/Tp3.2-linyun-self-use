@@ -1,29 +1,19 @@
 <?php
-// +----------------------------------------------------------------------
-// | 零云 [ 简单 高效 卓越 ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016 http://www.lingyun.net All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: jry <598821125@qq.com>
-// +----------------------------------------------------------------------
 namespace Admin\Model;
 
 use Common\Model\ModelModel;
 
 /**
  * 用户模型
- * @author jry <598821125@qq.com>
  */
 class UserModel extends ModelModel
 {
 	/**
 	 * 数据库表名
-	 * @author jry <598821125@qq.com>
 	 */
 	protected $tableName = 'admin_user';
 	/**
 	 * 自动验证规则
-	 * @author jry <598821125@qq.com>
 	 */
 	protected $_validate
 		= [
@@ -56,7 +46,6 @@ class UserModel extends ModelModel
 		];
 	/**
 	 * 自动完成规则
-	 * @author jry <598821125@qq.com>
 	 */
 	protected $_auto
 		= [
@@ -71,12 +60,11 @@ class UserModel extends ModelModel
 
 	/**
 	 * 查找后置操作
-	 * @author jry <598821125@qq.com>
 	 */
 	protected function _after_find(&$result, $options)
 	{
 		$result['avatar_url'] = get_cover($result['avatar'], 'avatar');
-		$cert_info = false;
+		$cert_info            = false;
 		// 用户识别label
 		if (D('Admin/Module')->where('name="User" and status="1"')->count()) {
 			$cert_info = D('User/Cert')->isCert($result['id']);
@@ -94,7 +82,6 @@ class UserModel extends ModelModel
 
 	/**
 	 * 查找后置操作
-	 * @author jry <598821125@qq.com>
 	 */
 	protected function _after_select(&$result, $options)
 	{
@@ -108,7 +95,6 @@ class UserModel extends ModelModel
 	 * @param  integer $id 用户ID
 	 * @param  string  $field
 	 * @return array  用户信息
-	 * @author jry <598821125@qq.com>
 	 */
 	public function getUserInfo($id = null, $field = null)
 	{
@@ -133,7 +119,6 @@ class UserModel extends ModelModel
 
 	/**
 	 * 用户登录
-	 * @author jry <598821125@qq.com>
 	 */
 	public function login($username, $password, $map = null)
 	{
@@ -163,7 +148,6 @@ class UserModel extends ModelModel
 
 	/**
 	 * 设置登录状态
-	 * @author jry <598821125@qq.com>
 	 */
 	public function auto_login($user)
 	{
@@ -183,7 +167,6 @@ class UserModel extends ModelModel
 	 * 数据签名认证
 	 * @param  array $data 被认证的数据
 	 * @return string       签名
-	 * @author jry <598821125@qq.com>
 	 */
 	public function data_auth_sign($data)
 	{
@@ -200,7 +183,6 @@ class UserModel extends ModelModel
 	/**
 	 * 检测用户是否登录
 	 * @return integer 0-未登录，大于0-当前登录用户ID
-	 * @author jry <598821125@qq.com>
 	 */
 	public function is_login()
 	{

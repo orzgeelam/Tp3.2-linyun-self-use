@@ -9,7 +9,7 @@
 namespace Common\Util;
 /**
  * Sql语句处理执行类
- * @author jry <598821125@qq.com>
+ *
  */
 class Sql {
     /**

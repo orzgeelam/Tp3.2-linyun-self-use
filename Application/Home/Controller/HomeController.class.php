@@ -1,28 +1,22 @@
 <?php
-// +----------------------------------------------------------------------
-// | 零云 [ 简单 高效 卓越 ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016 http://www.lingyun.net All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: jry <598821125@qq.com>
-// +----------------------------------------------------------------------
+
 namespace Home\Controller;
 use Common\Controller\ControllerController;
 /**
  * 前台公共控制器
  * 为防止多分组Controller名称冲突，公共Controller名称统一使用模块名
- * @author jry <598821125@qq.com>
+ *
  */
 class HomeController extends ControllerController {
     /**
      * 用户信息
-     * @author jry <598821125@qq.com>
+     *
      */
     protected $user_info;
 
     /**
      * 初始化方法
-     * @author jry <598821125@qq.com>
+     *
      */
     protected function _initialize() {
         // 系统开关

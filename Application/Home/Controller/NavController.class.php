@@ -1,21 +1,15 @@
 <?php
-// +----------------------------------------------------------------------
-// | 零云 [ 简单 高效 卓越 ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016 http://www.lingyun.net All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: jry <598821125@qq.com>
-// +----------------------------------------------------------------------
+
 namespace Home\Controller;
 use Common\Util\Think\Page;
 /**
  * 导航控制器
- * @author jry <598821125@qq.com>
+ *
  */
 class NavController extends HomeController {
     /**
      * 默认方法
-     * @author jry <598821125@qq.com>
+     *
      */
     public function index() {
         $this->assign('meta_title', "首页");
@@ -24,7 +18,7 @@ class NavController extends HomeController {
 
     /**
      * 单页类型
-     * @author jry <598821125@qq.com>
+     *
      */
     public function page($id) {
         $nav_object = D('Admin/Nav');
@@ -39,7 +33,7 @@ class NavController extends HomeController {
 
     /**
      * 文章列表
-     * @author jry <598821125@qq.com>
+     *
      */
     public function lists($cid) {
         $nav_object = D('Admin/Nav');
@@ -70,7 +64,7 @@ class NavController extends HomeController {
 
     /**
      * 文章详情
-     * @author jry <598821125@qq.com>
+     *
      */
     public function post($id) {
         $post_object = D('Admin/Post');
@@ -88,7 +82,7 @@ class NavController extends HomeController {
 
     /**
      * 系统配置
-     * @author jry <598821125@qq.com>
+     *
      */
     public function config($name = '') {
         $data_list = C($name);
@@ -99,7 +93,7 @@ class NavController extends HomeController {
 
     /**
      * 导航
-     * @author jry <598821125@qq.com>
+     *
      */
     public function nav($group = 'wap_bottom') {
         $data_list = D('Admin/Nav')->getNavTree(0, $group);
@@ -110,7 +104,7 @@ class NavController extends HomeController {
 
     /**
      * 模块
-     * @author jry <598821125@qq.com>
+     *
      */
     public function module() {
         $map['status'] = 1;

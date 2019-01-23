@@ -10,12 +10,12 @@ namespace Common\Util;
 /**
  * 列表树生成工具类
  * 该类里的方法一部分来自OneThink，一部分来自网络，最后加上作者的修改形成完善的Tree类
- * @author jry <598821125@qq.com>
+ *
  */
 class Tree {
     /**
      * 用于树型数组完成递归格式的全局变量
-     * @author jry <598821125@qq.com>
+     *
      */
     private $formatTree;
 

@@ -327,7 +327,7 @@ class Str {
      * 过滤标签，输出纯文本
      * @param string $str 文本内容
      * @return string 处理后内容
-     * @author jry <598821125@qq.com>
+     *
      */
     static public function html2text($str){
         $str = preg_replace("/<sty(.*)\\/style>|<scr(.*)\\/script>|<!--(.*)-->/isU","",$str);

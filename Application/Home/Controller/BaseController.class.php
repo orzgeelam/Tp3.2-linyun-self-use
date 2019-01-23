@@ -15,7 +15,7 @@ use Think\Verify;
 /**
  * 微信前台公共控制器
  * 为防止多分组Controller名称冲突，公共Controller名称统一使用模块名
- * @author jry <598821125@qq.com>
+ *
  */
 class BaseController extends ControllerController
 {
@@ -26,7 +26,7 @@ class BaseController extends ControllerController
 
     /**
      * 初始化方法
-     * @author jry <598821125@qq.com>
+     *
      */
     protected function _initialize()
     {
@@ -127,7 +127,7 @@ class BaseController extends ControllerController
             $userInfo['pay_pass']  = '';
         }
 
-       
+
         $userInfo['user_type'] = $userInfo['user_type'] == 1 ? 'normal' : 'beauty';
         $this->userInfo        = $userInfo;
         $this->assign('uid', $this->uid);
@@ -190,7 +190,7 @@ class BaseController extends ControllerController
 
     /**
      * 用户登录检测
-     * @author jry <598821125@qq.com>
+     *
      */
     protected function is_auth()
     {
@@ -248,7 +248,7 @@ class BaseController extends ControllerController
     /**
      * 设置一条或者多条数据的状态
      * @param $script 严格模式要求处理的纪录的uid等于当前登陆用户UID
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setStatus($model = CONTROLLER_NAME, $script = true)
     {
@@ -455,7 +455,7 @@ JS;
 
     /**
      * 图片验证码生成，用于登录和注册
-     * @author jry <598821125@qq.com>
+     *
      */
     public function verify($vid = 1)
     {

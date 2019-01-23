@@ -1,11 +1,5 @@
 <?php
-// +----------------------------------------------------------------------
-// | 零云 [ 简单 高效 卓越 ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016 http://www.lingyun.net All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: jry <598821125@qq.com>
-// +----------------------------------------------------------------------
+
 
 require_once APP_PATH . 'Common/Common/developer.php'; //加载开发者二次开发公共函数库
 
@@ -14,7 +8,7 @@ require_once APP_PATH . 'Common/Common/developer.php'; //加载开发者二次�
  * @param string $hook   钩子名称
  * @param mixed $params 传入参数
  * @return void
- * @author jry <598821125@qq.com>
+ *
  */
 function hook($hook, $params = array())
 {
@@ -24,7 +18,7 @@ function hook($hook, $params = array())
 /**
  * 获取插件类的类名
  * @param strng $name 插件名
- * @author jry <598821125@qq.com>
+ *
  */
 function get_addon_class($name)
 {
@@ -36,7 +30,7 @@ function get_addon_class($name)
  * 插件显示内容里生成访问插件的url
  * @param string $url url
  * @param array $param 参数
- * @author jry <598821125@qq.com>
+ *
  */
 function addons_url($url, $param = array())
 {
@@ -46,7 +40,7 @@ function addons_url($url, $param = array())
 /**
  * 兼容Nginx
  * @return array
- * @author jry <598821125@qq.com>
+ *
  */
 if (!function_exists('getallheaders')) {
     function getallheaders()
@@ -87,7 +81,7 @@ function parse_attr($value, $type = null)
 /**
  * POST数据提前处理
  * @return array
- * @author jry <598821125@qq.com>
+ *
  */
 function format_data($data = null)
 {
@@ -117,7 +111,7 @@ function format_data($data = null)
 
 /**
  * 获取所有数据并转换成一维数组
- * @author jry <598821125@qq.com>
+ *
  */
 function select_list_as_tree($model, $map = null, $extra = null, $key = 'id')
 {
@@ -152,7 +146,7 @@ function select_list_as_tree($model, $map = null, $extra = null, $key = 'id')
  * 解析文档内容
  * @param string $str 待解析内容
  * @return string
- * @author jry <598821125@qq.com>
+ *
  */
 function parse_content($str)
 {
@@ -190,7 +184,7 @@ function cut_str($str, $start, $length, $charset = 'utf-8', $suffix = true)
  * 过滤标签，输出纯文本
  * @param string $str 文本内容
  * @return string 处理后内容
- * @author jry <598821125@qq.com>
+ *
  */
 function html2text($str)
 {
@@ -203,7 +197,7 @@ function html2text($str)
  * @param string $type  类型. normal | mohu | full | ymd | other
  * @param string $alt   已失效
  * @return string
- * @author jry <598821125@qq.com>
+ *
  */
 function friendly_date($sTime, $type = 'mohu', $alt = 'false')
 {
@@ -224,7 +218,7 @@ function datetime($str = 'now', $format="Y-m-d H:i:s")
  * 时间戳格式化
  * @param int $time
  * @return string 完整的时间显示
- * @author jry <598821125@qq.com>
+ *
  */
 function time_format($time = null, $format = 'Y-m-d H:i')
 {
@@ -236,7 +230,7 @@ function time_format($time = null, $format = 'Y-m-d H:i')
  * @param  integer $id 用户ID
  * @param  string $field
  * @return array  用户信息
- * @author jry <598821125@qq.com>
+ *
  */
 function get_user_info($id, $field)
 {
@@ -253,7 +247,7 @@ function get_user_info($id, $field)
  * 系统非常规MD5加密方法
  * @param  string $str 要加密的字符串
  * @return string
- * @author jry <598821125@qq.com>
+ *
  */
 function user_md5($str, $auth_key = '')
 {
@@ -266,7 +260,7 @@ function user_md5($str, $auth_key = '')
 /**
  * 检测用户是否登录
  * @return integer 0-未登录，大于0-当前登录用户ID
- * @author jry <598821125@qq.com>
+ *
  */
 function is_login()
 {
@@ -276,7 +270,7 @@ function is_login()
 /**
  * 检测用户是否VIP
  * @return integer VIP等级
- * @author jry <598821125@qq.com>
+ *
  */
 function is_vip($uid)
 {
@@ -291,7 +285,7 @@ function is_vip($uid)
  * 获取上传文件路径
  * @param  int $id 文件ID
  * @return string
- * @author jry <598821125@qq.com>
+ *
  */
 function get_cover($id = null, $type = null)
 {
@@ -305,7 +299,7 @@ function get_cover($id = null, $type = null)
  * @param string|boolean $suffix 伪静态后缀，默认为true表示获取配置值
  * @param boolean $domain 是否显示域名
  * @return string
- * @author jry <598821125@qq.com>
+ *
  */
 function oc_url($url = '', $vars = '', $suffix = true, $domain = true)
 {

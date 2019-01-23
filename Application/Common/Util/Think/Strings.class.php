@@ -357,7 +357,7 @@ class Strings
      * 过滤标签，输出纯文本
      * @param string $str 文本内容
      * @return string 处理后内容
-     * @author jry <598821125@qq.com>
+     *
      */
     public static function html2text($str)
     {

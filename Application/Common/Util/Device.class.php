@@ -9,13 +9,13 @@
 namespace Common\Util;
 /**
  * Device相关处理
- * @author jry <598821125@qq.com>
+ *
  */
 class Device {
     /**
      * 是否微信访问
      * @return bool
-     * @author jry <598821125@qq.com>
+     *
      */
     static public function isWeixin() {
         if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false ) {
@@ -28,7 +28,7 @@ class Device {
     /**
      * 是否手机访问
      * @return bool
-     * @author jry <598821125@qq.com>
+     *
      */
     static public function isWap() {
         // 如果有HTTP_X_WAP_PROFILE则一定是移动设备

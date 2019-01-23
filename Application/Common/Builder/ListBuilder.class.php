@@ -1,18 +1,12 @@
 <?php
-// +----------------------------------------------------------------------
-// | 零云 [ 简单 高效 卓越 ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016 http://www.lingyun.net All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: jry <598821125@qq.com>
-// +----------------------------------------------------------------------
+
 namespace Common\Builder;
 
 use Common\Controller\ControllerController;
 
 /**
  * 数据列表自动生成器
- * @author jry <598821125@qq.com>
+ *
  */
 class ListBuilder extends ControllerController
 {
@@ -32,7 +26,7 @@ class ListBuilder extends ControllerController
     /**
      * 初始化方法
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     protected function _initialize()
     {
@@ -43,7 +37,7 @@ class ListBuilder extends ControllerController
      * 设置页面标题
      * @param $title 标题文本
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setMetaTitle($meta_title)
     {
@@ -55,7 +49,7 @@ class ListBuilder extends ControllerController
      * 设置页面模版
      * @param $template 模版
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setTemplate($template) {
         $this->_template = $template;
@@ -70,7 +64,7 @@ class ListBuilder extends ControllerController
      * @param string $type 按钮类型，主要有add/resume/forbid/recycle/restore/delete/self七几种取值
      * @param array  $attr 按钮属性，一个定了标题/链接/CSS类名等的属性描述数组
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function addTopButton($type, $attribute = null)
     {
@@ -251,7 +245,7 @@ class ListBuilder extends ControllerController
      * @param $title
      * @param $url
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setSearch($title, $url)
     {
@@ -270,7 +264,7 @@ class ListBuilder extends ControllerController
      * @param $extra_class 表单项是否隐藏
      * @param $extra_attr 表单项额外属性
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function addSearchItem($name, $type, $title='', $tip='', $options = array(), $extra_class = '', $extra_attr = '')
     {
@@ -306,7 +300,7 @@ class ListBuilder extends ControllerController
      *                           )
      * @param $current_tab 当前tab
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setTabNav($tab_list, $current_tab)
     {
@@ -319,7 +313,7 @@ class ListBuilder extends ControllerController
 
     /**
      * 加一个表格标题字段
-     * @author jry <598821125@qq.com>
+     *
      */
     public function addTableColumn($name, $title, $type = null, $param = null)
     {
@@ -335,7 +329,7 @@ class ListBuilder extends ControllerController
 
     /**
      * 表格数据列表
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setTableDataList($table_data_list)
     {
@@ -345,7 +339,7 @@ class ListBuilder extends ControllerController
 
     /**
      * 表格数据列表的主键名称
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setTableDataListKey($table_data_list_key)
     {
@@ -363,7 +357,7 @@ class ListBuilder extends ControllerController
      * @param string $type 按钮类型，edit/forbid/recycle/restore/delete/self六种取值
      * @param array  $attr 按钮属性，一个定了标题/链接/CSS类名等的属性描述数组
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function addRightButton($type, $attribute = null)
     {
@@ -481,7 +475,7 @@ class ListBuilder extends ControllerController
 
                 // 这个按钮定义好了把它丢进按钮池里
                 $this->_right_button_list[] = $my_attribute;
-                break;   
+                break;
 
             //定义置顶-取消置顶
             case 'setTop': // 改变记录状态按钮，会更具数据当前的状态自动选择应该显示启用/禁用
@@ -707,7 +701,7 @@ class ListBuilder extends ControllerController
      * 设置分页
      * @param $page
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setTableDataPage($table_data_page)
     {
@@ -721,7 +715,7 @@ class ListBuilder extends ControllerController
      * 比如管理员列表ID为1的超级管理员右侧编辑按钮不显示删除
      * @param $page
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function alterTableData($condition, $alter_data)
     {
@@ -736,7 +730,7 @@ class ListBuilder extends ControllerController
      * 设置额外功能代码
      * @param $extra_html 额外功能代码
      * @return $this
-     * @author jry <598821125@qq.com>
+     *
      */
     public function setExtraHtml($extra_html)
     {
@@ -746,7 +740,7 @@ class ListBuilder extends ControllerController
 
     /**
      * 显示页面
-     * @author jry <598821125@qq.com>
+     *
      */
     public function display($template = '', $charset = '', $contentType = '', $content = '', $prefix = '')
     {
