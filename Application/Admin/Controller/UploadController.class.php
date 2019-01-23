@@ -19,7 +19,7 @@ class UploadController extends AdminController
 		$condition      = ['like', '%'.$keyword.'%'];
 		$map['id|path'] = [$condition, $condition, '_multi' => true];
 		//获取所有上传
-		$map['status'] = ['egt', '0']; //禁用和正常状态
+		$map['status'] = ['neq', '0']; //禁用和正常状态
 		$p             = !empty($_GET["p"]) ? $_GET['p'] : 1;
 		$upload_object = D('Upload');
 		$data_list     = $upload_object

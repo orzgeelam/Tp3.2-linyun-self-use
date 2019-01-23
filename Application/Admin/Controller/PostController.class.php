@@ -22,7 +22,7 @@ class PostController extends AdminController
 		if (I('cid')) {
 			$cid = $map['cid'] = I('cid');
 		}
-		$map['status'] = ['egt', '0'];  // 禁用和正常状态
+		$map['status'] = ['neq', '0'];  // 禁用和正常状态
 		$post_object   = D('Admin/Post');
 		$data_list     = $post_object
 			->page($p, C('ADMIN_PAGE_ROWS'))

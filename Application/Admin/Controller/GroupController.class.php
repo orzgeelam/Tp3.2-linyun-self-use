@@ -22,7 +22,7 @@ class GroupController extends AdminController
 			'_multi' => true,
 		];
 		// 获取所有部门
-		$map['status'] = ['egt', '0']; //禁用和正常状态
+		$map['status'] = ['neq', '0']; //禁用和正常状态
 		$map['id']     = ['neq', 1];
 		$data_list     = D('Group')
 			->where($map)

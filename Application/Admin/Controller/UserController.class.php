@@ -29,7 +29,7 @@ class UserController extends AdminController
 			$map['email_bind'] = (int) $email_bind;
 		}
 		// 获取所有用户
-		$map['status'] = ['egt', '0']; // 禁用和正常状态
+		$map['status'] = ['neq', '0']; // 禁用和正常状态
 		$this->extendDates($map, 'create_time', 'timestamp');
 		$p           = !empty($_GET["p"]) ? $_GET['p'] : 1;
 		$user_object = D('User');

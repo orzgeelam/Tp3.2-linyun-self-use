@@ -24,7 +24,7 @@ class ConfigController extends AdminController
 			'_multi' => true,
 		];
 		// 获取所有配置
-		$map['status'] = ['egt', '0'];  // 禁用和正常状态
+		$map['status'] = ['neq', '0'];  // 禁用和正常状态
 		$map['group']  = ['eq', $group];
 		$p             = !empty($_GET["p"]) ? $_GET['p'] : 1;
 		$config_object = D('Config');
@@ -157,7 +157,7 @@ class ConfigController extends AdminController
 	public function group($group = 1)
 	{
 		//根据分组获取配置
-		$map['status'] = ['egt', '0'];  // 禁用和正常状态
+		$map['status'] = ['neq', '0'];  // 禁用和正常状态
 		$map['group']  = ['eq', $group];
 		$data_list     = D('Config')
 			->where($map)

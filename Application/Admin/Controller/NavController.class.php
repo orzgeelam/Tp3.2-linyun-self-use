@@ -22,7 +22,7 @@ class NavController extends AdminController
 			'_multi' => true,
 		];
 		// 获取所有导航
-		$map['status'] = ['egt', '0'];
+		$map['status'] = ['neq', '0'];
 		$map['group']  = $group;
 		$data_list     = D('Admin/Nav')
 			->where($map)

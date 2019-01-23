@@ -23,7 +23,7 @@ class AccessController extends AdminController
 			'_multi' => true,
 		];
 		// 获取所有配置
-		$map['status'] = ['egt', '0'];  // 禁用和正常状态
+		$map['status'] = ['neq', '0'];  // 禁用和正常状态
 		$p             = !empty($_GET["p"]) ? $_GET['p'] : 1;
 		$access_object = D('Access');
 		$data_list     = $access_object
