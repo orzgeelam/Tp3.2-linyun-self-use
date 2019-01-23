@@ -14,12 +14,10 @@ class GroupController extends AdminController
 	public function index()
 	{
 		// 搜索
-		$keyword         = I('keyword', '', 'string');
-		$condition       = ['like', '%'.$keyword.'%'];
-		$map['id|title'] = [
+		$keyword      = I('keyword', '', 'string');
+		$condition    = ['like', '%'.$keyword.'%'];
+		$map['title'] = [
 			$condition,
-			$condition,
-			'_multi' => true,
 		];
 		// 获取所有部门
 		$map['status'] = ['neq', '0']; //禁用和正常状态
@@ -42,9 +40,8 @@ class GroupController extends AdminController
 		        ->addTopButton('resume')// 添加启用按钮
 		        ->addTopButton('forbid')// 添加禁用按钮
 		        ->addTopButton('delete')// 添加删除按钮
-		        ->setSearch('请输入ID/部门名称', U('index'))
-		        ->addTableColumn('id', 'ID')
-		        ->addTableColumn('title_show', '标题')
+		        ->addSearchItem('keyword', 'text', '', '部门名称')
+		        ->addTableColumn('title_show', '部门名称')
 		        ->addTableColumn('icon', '图标', 'icon')
 		        ->addTableColumn('sort', '排序')
 		        ->addTableColumn('status', '状态', 'status')
@@ -53,15 +50,9 @@ class GroupController extends AdminController
 		        ->addRightButton('edit')// 添加编辑按钮
 		        ->addRightButton('forbid')// 添加禁用/启用按钮
 		        ->addRightButton('delete')// 添加删除按钮
-		        ->alterTableData( // 修改列表数据
-				['key' => 'id', 'value' => '1'],
-				['right_button' => $right_button]
-			)
-			//            ->alterTableData( // 修改列表数据
-			//                array('key' => 'id', 'value' => '2'),
-			//                array('right_button' => $right_button2)
-			//            )
-			    ->display();
+		        ->alterTableData(['key' => 'id', 'value' => '1'], ['right_button' => $right_button])// 修改列表数据
+		        // ->alterTableData(['key' => 'id', 'value' => '2'], ['right_button' => $right_button2])// 修改列表数据
+		        ->display();
 	}
 
 	/**

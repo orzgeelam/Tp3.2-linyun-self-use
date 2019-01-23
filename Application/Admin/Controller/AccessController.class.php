@@ -15,12 +15,10 @@ class AccessController extends AdminController
 	public function index()
 	{
 		// 搜索
-		$keyword       = I('keyword', '', 'string');
-		$condition     = ['like', '%'.$keyword.'%'];
-		$map['id|uid'] = [
+		$keyword             = I('keyword', '', 'string');
+		$condition           = ['like', '%'.$keyword.'%'];
+		$map['uid'] = [
 			$condition,
-			$condition,
-			'_multi' => true,
 		];
 		// 获取所有配置
 		$map['status'] = ['neq', '0'];  // 禁用和正常状态
@@ -49,8 +47,7 @@ class AccessController extends AdminController
 		        ->addTopButton('resume')// 添加启用按钮
 		        ->addTopButton('forbid')// 添加禁用按钮
 		        ->addTopButton('delete')// 添加删除按钮
-		        ->setSearch('请输入ID/UID', U('index'))
-		        ->addTableColumn('id', 'ID')
+		        ->addSearchItem('keyword', 'text', '', 'UID')
 		        ->addTableColumn('uid', 'UID')
 		        ->addTableColumn('username', '用户名')
 		        ->addTableColumn('group_title', '用户组')
