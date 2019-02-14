@@ -9,7 +9,7 @@
 // 	'DB_USER'   => 'root', // 用户名
 // 	'DB_PWD'    => 'Zhaoqiaoyun1', // 密码
 // 	'DB_PORT'   => '3306', // 端口
-// 	'DB_PREFIX' => 'xilu_', // 数据库表前缀
+// 	'DB_PREFIX' => 'orz_', // 数据库表前缀
 // ];
 /**
  * 本地数据库
@@ -21,5 +21,5 @@ return [
 	'DB_USER'   => 'root',       // 用户名
 	'DB_PWD'    => 'root',        // 密码
 	'DB_PORT'   => '3306',            // 端口
-	'DB_PREFIX' => 'xilu_',     // 数据库表前缀
+	'DB_PREFIX' => 'orz_',     // 数据库表前缀
 ];
