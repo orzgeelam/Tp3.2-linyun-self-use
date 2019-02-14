@@ -273,7 +273,7 @@ CREATE TABLE `xilu_user` (
 -- ----------------------------
 -- Records of xilu_user
 -- ----------------------------
-INSERT INTO `xilu_user` VALUES ('1', '0', 'oRrvHs8YkeK0um5dXuKfd4Asf7_U', '刺猬', '', 'http://wx.qlogo.cn/mmopen/oLVxgQSrbtia8t05FmSqp1ePm9icubfLHrFLGT5MAlM5Richgtb0PJQ5dpYvNz1X61L8icsVCdm0BMiaA1r479jkrRdorg1s35B1E/0', '0', null, '1', null, null, null, null, null, '0', null, '0', null);
+INSERT INTO `xilu_user` VALUES ('1', '0', 'oRrvHs8YkeK0um5dXuKfd4Asf7_U', '开发人员', '', 'http://wx.qlogo.cn/mmopen/oLVxgQSrbtia8t05FmSqp1ePm9icubfLHrFLGT5MAlM5Richgtb0PJQ5dpYvNz1X61L8icsVCdm0BMiaA1r479jkrRdorg1s35B1E/0', '0', null, '1', null, null, null, null, null, '0', null, '0', null);
 
 -- ----------------------------
 -- Table structure for xilu_wxmenu
